@@ -8,6 +8,11 @@ class Signal:
         :param tk: moment K where some signals "change" (like step or pulse)
         :param T: Period (for timeline construction only)
         :param freq: Frequency of sin signal
+        
+        Example:
+        signal = Signal("step", 1000)
+        print(signal.values)
+        print(signal.timeline)
         """
         self.len = n
         self.amp = amp
